@@ -1,9 +1,7 @@
-import java.time.LocalDate;
-
 public class MentoriaOnline extends Mentoria {
     private String url;
 
-    public MentoriaOnline(String tema, LocalDate data, String url) {
+    public MentoriaOnline(String tema, int data, String url) {
         super(tema, data); // Chama o construtor da classe pai (Mentoria)
         this.url = url;
     }

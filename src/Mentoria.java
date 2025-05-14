@@ -1,19 +1,17 @@
-import java.time.LocalDate;
-
 public class Mentoria {
-    private String tema;
-    private LocalDate data;
+    private String titulo;
+    private int duracao;
 
-    public Mentoria(String tema, LocalDate data) {
-        this.tema = tema;
-        this.data = data;
+    public Mentoria(String titulo, int duracao) {
+        this.titulo = titulo;
+        this.duracao = duracao;
     }
 
-    public String getTema() {
-        return tema;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public LocalDate getData() {
-        return data;
+    public int getXp() {
+        return duracao * 15; // exemplo de cálculo de XP
     }
 }

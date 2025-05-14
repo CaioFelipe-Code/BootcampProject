@@ -1,19 +1,17 @@
-import java.util.List;
-
 public class Curso {
-    private String nome;
-    private String descricao;
+    private String titulo;
+    private int cargaHoraria;
 
-    public Curso(String nome, String descricao) {
-        this.nome = nome;
-        this.descricao = descricao;
+    public Curso(String titulo, int cargaHoraria) {
+        this.titulo = titulo;
+        this.cargaHoraria = cargaHoraria;
     }
 
-    public String getNome() {
-        return nome;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public int getXp() {
+        return cargaHoraria * 10; // exemplo de cálculo de XP
     }
 }
